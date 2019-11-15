@@ -1,0 +1,25 @@
+extend base
+block content
+  .container__updateUser
+    .updateUser-form
+      h2.heading-secondary.ma-bt-lg Update your account
+      form.updateUser
+        .form__group
+          label.form__label(for='Name') Name
+          input#Name.form__input(type='text', placeholder='yourName', required)
+        .form__group
+          label.form__label(for='email') Email address
+          input#email.form__input(type='email', placeholder='you@example.com', required)
+        .form__group
+          label.form__label(for='role') Role
+          input#email.form__input(type='text', placeholder='your Role', required)
+        //- .form__group.ma-bt-md
+        //-   label.form__label(for='password') Password
+        //-   input#password.form__input(type='password', placeholder='••••••••', required, minlength='8')
+        //- .form__group
+        //- .form__group.ma-bt-md
+        //-   label.form__label(for='password') Confirm Password
+        //-   input#confirmPassword.form__input(type='password', placeholder='••••••••', required, minlength='8')
+        .form__group
+          button.btn.btn-full.form-button(type="submit") SignUp
+      

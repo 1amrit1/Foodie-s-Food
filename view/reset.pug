@@ -1,0 +1,17 @@
+extend base
+block content
+  .container__forgetPassword
+    .updateUser-form
+      h2.heading-secondary.ma-bt-lg RESET YOUR PASSWORD
+      form.reset
+        .form__group
+          label.form__label(for='token') Token
+          input#Name.form__input(type='text', placeholder='your unique token sent in email id', required)
+        .form__group.ma-bt-md
+          label.form__label(for='password') New Password
+          input#password.form__input(type='password', placeholder='••••••••', required, minlength='8')
+        .form__group.ma-bt-md
+          label.form__label(for='password') Confirm Password
+          input#confirmPassword.form__input(type='password', placeholder='••••••••', required, minlength='8')
+        .btn-parent
+          button.btn.btn-full.form-button(type="submit") RESET PASSWORD

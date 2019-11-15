@@ -1,0 +1,13 @@
+extend base
+block content
+    .container__parent
+      form.login
+        .entry
+          .entry-text Email
+          input(type='email', name='email', placeholder='Your Email')
+        .entry
+          .entry-text Password
+          input(type='password', name='password', placeholder='*********')
+        .btn-parent
+          button.btn.btn-full.form-button(type="submit") Login
+        a(href="/forgetPassword") Forget Password
